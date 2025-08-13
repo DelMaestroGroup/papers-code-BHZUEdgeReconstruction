@@ -69,13 +69,13 @@ The creation of these materials was supported in part by the Department of Energ
 <img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/szi_12x3_w4.png" width="400px">
 
 #### Supplementary Figure 1: Spectral comparison for different helical potential
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/Akyw_for_diff_eps_Vo_10p0_36x36_SSW.png" width="600px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Akyw_for_diff_eps_Vo_10p0_36x36_SSW.png" width="600px">
 
 #### Supplementary Figure 2: Charge density profiles for the ground-states
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/Avg_nrx_vs_rx_for_12x3_DMRG.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Avg_nrx_vs_rx_for_12x3_DMRG.png" width="400px">
 
 #### Supplementary Figure 3: Finite size scaling of the exchange coupling
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/FS_exchange_vs_1byLx_Nx3_DMRG.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/FS_exchange_vs_1byLx_Nx3_DMRG.png" width="400px">
 
 
 This figure is relesed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and can be freely copied, redistributed and remixed.
