@@ -1,0 +1,77 @@
+#Use this file as an input for the BHZ model
+#Do not put space before or after the 'equal (=)' sign
+#Also do not put space in a variable string name
+
+#System Parameters:----->
+PBC_X=False
+PBC_Y=True
+
+Cells_X=36
+Cells_Y=36
+Total_Orbs=2
+#----------------------->
+
+Threads=4
+
+#Model Parameters:------>
+Inter_Orb_Hopping_A=0.3
+Intra_Orb_Hopping_B=0.5
+Intra_Orb_Hopping_D=0.0
+Gap_Parameter_M=1.0
+Gap_Parameter_C=0.0
+
+Mag_Field=0.0
+
+U_Onsite=1.0
+JHbyU_Ratio=0.25
+
+VNN_Hartree=0.0
+
+Ensemble=GCE
+#Ensemble=CE
+
+#for canonical-ensemble:------->
+Filling=0.5
+Temperature=0.00001
+
+#for grand-canonical-ensemble:->
+Number_of_Softwalls=1
+Softwall_Width=6
+Confining_Potential_Vo=10.0
+Fixed_mu=0
+siteBasedIonic=False
+Helical_Edge_Pot=0.3
+#----------------------->
+
+#Self-consistency:------>
+Read_OP_from_file=False
+OP_Filename=File_input_order_parameters.txt
+
+Random_Seed=4
+Max_Iterations=1000
+Convergence_Error=0.0000001
+alpha_OP=0.5
+
+Simple_Mixing=False
+#----------------------->
+
+#Observables:------>
+Calculate_LDOE=True
+Calculate_SC=False
+Calculate_SS_corr=False
+
+Calculate_wave_fn=False
+State_val=592
+
+Calculate_DOS=False
+Spectral_Akxw=False
+Spectral_Akyw=True
+Calculate_LDOS_along_x=False
+
+omega_min=-0.61
+omega_max=0.61
+d_omega=0.0012
+broadening=0.0025
+#----------------------->
+
+

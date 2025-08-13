@@ -15,11 +15,33 @@ For a two-dimensional cylinder with one smooth edge, we identify discrete partic
 This repository includes links, code, scripts, and data to generate the figures in a paper.
 
 ### Requirements
-The data in this project was generated via ...  Processed data is included in the [data](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/data) directory and the full raw simulation data set is available online at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX)
+The data in this project is generated using three different methods: Exact Diagonalization, Mean-Field and DMRG. Processed data is included in the [data](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/data) directory and the full raw simulation data set is available online at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX)
 
-1. A minimal environment to execute these notebooks can be installed via `pip install -r requirements.txt`
-2. [Dependency Name](https://dependencelink)
-3. ...
+1. The spectral data for the interacting BHZ model was generated via self-consistent real-space mean-field calculations. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/SelfConsistent_MF). Detail instructions are provided in this repo regarding compilations, executions and more.
+2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other). (a) The in-house DMRG++ software developed by G.A. The documentation for the same is provided [here](https://github.com/g1257/dmrgpp), for compilation follow the steps below:
+
+#### DMRG++ Code and Compilation
+
+```bash
+git clone https://code.ornl.gov/gonzalo_3/PsimagLite.git
+cd PsimagLite/lib
+perl configure.pl
+make
+cd ../../
+git clone https://code.ornl.gov/gonzalo_3/dmrgpp.git
+cd dmrgpp/src
+perl configure.pl
+make
+```
+
+Dependencies include the [BOOST](https://www.boost.org/), [HDF5](https://docs.hdfgroup.org/archive/support/HDF5/doc1.8/cpplus_RM/index.html) and [OpenBLAS](https://www.openblas.net/) libraries
+
+#### Running the Code
+This will generate `dmrg` and `observe` executables. Run the dmrg executable first to save the ground state and then use the observe executable to evaluate all the necessary observables. 
+
+(b) the iTensors DMRG code developed by M.T. 
+
+3. For small system we considered the many-body exact diagonalization code. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/ManyBody_ED). Detail instructions are provided in this repo regarding compilations, executions and more.
 
 ### Support
 The creation of these materials was supported in part by the Department of Energy under Award No. [DE-SC0022311]([https://www.nsf.gov/awardsearch/simpleSearchResult?queryText=delmaestro](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=31bd2b59-7a7a-424c-83cc-fad4b3df485f&rtc=24&PRoleId=10)).
@@ -28,9 +50,33 @@ The creation of these materials was supported in part by the Department of Energ
 
 
 ### Figures
+#### Figure 1: Lattice Geometry and Potential Profile
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/lattice_plot/Confining_Lattice_new.png" width="400px">
 
-#### Figure 01: Figure Name
-<img src="https://github.com/DelMaestroGroup/papers-code-template/blob/main/figures/figure01.svg" width="400px">
+#### Figure 2: Mean-field Orbital and Spin Resolved Spectral Function
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.png" width="600px">
+
+#### Figure 3: Total particles versus Confining potential
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/Tot_N_vs_V0_for_12x3_GCE.png" width="400px">
+
+#### Figure 4: GSE for different Sz sectors of $N_0$, $N_0+1$ and $N_0+2$ particle sectors
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/GSE_vs_Sz_for_diff_Vo_12x3_triple.png" width="400px">
+
+#### Figure 5: Change in particle density between different particle sectors
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/del_ni_12x3_w4.png" width="400px">
+
+#### Figure 6: Magnetization profiles for the ground-states
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/szi_12x3_w4.png" width="400px">
+
+#### Supplementary Figure 1: Spectral comparison for different helical potential
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/Akyw_for_diff_eps_Vo_10p0_36x36_SSW.png" width="600px">
+
+#### Supplementary Figure 2: Charge density profiles for the ground-states
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/Avg_nrx_vs_rx_for_12x3_DMRG.png" width="400px">
+
+#### Supplementary Figure 3: Finite size scaling of the exchange coupling
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/FS_exchange_vs_1byLx_Nx3_DMRG.png" width="400px">
+
 
 This figure is relesed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and can be freely copied, redistributed and remixed.
 
