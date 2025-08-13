@@ -51,28 +51,28 @@ The creation of these materials was supported in part by the Department of Energ
 
 ### Figures
 #### Figure 1: Lattice Geometry and Potential Profile
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/lattice_plot/Confining_Lattice_new.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/lattice_plot/Confining_Lattice_new.png" width="400px">
 
 #### Figure 2: Mean-field Orbital and Spin Resolved Spectral Function
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.png" width="600px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.png" width="600px">
 
 #### Figure 3: Total particles versus Confining potential
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/Tot_N_vs_V0_for_12x3_GCE.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Tot_N_vs_V0_for_12x3_GCE.png" width="400px">
 
 #### Figure 4: GSE for different Sz sectors of $N_0$, $N_0+1$ and $N_0+2$ particle sectors
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/GSE_vs_Sz_for_diff_Vo_12x3_triple.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/GSE_vs_Sz_for_diff_Vo_12x3_triple.png" width="500px">
 
 #### Figure 5: Change in particle density between different particle sectors
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/del_ni_12x3_w4.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/del_ni_12x3_w4.png" width="400px">
 
 #### Figure 6: Magnetization profiles for the ground-states
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/figures/szi_12x3_w4.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/szi_12x3_w4.png" width="400px">
 
 #### Supplementary Figure 1: Spectral comparison for different helical potential
 <img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Akyw_for_diff_eps_Vo_10p0_36x36_SSW.png" width="600px">
 
 #### Supplementary Figure 2: Charge density profiles for the ground-states
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Avg_nrx_vs_rx_for_12x3_DMRG.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Avg_nrx_vs_rx_for_12x3_DMRG.png" width="600px">
 
 #### Supplementary Figure 3: Finite size scaling of the exchange coupling
 <img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/FS_exchange_vs_1byLx_Nx3_DMRG.png" width="400px">
