@@ -15,7 +15,8 @@ For a two-dimensional cylinder with one smooth edge, we identify discrete partic
 This repository includes links, code, scripts, and data to generate the figures in a paper.
 
 ### Requirements
-The data in this project is generated using three different methods: Exact Diagonalization, Mean-Field and DMRG. Processed data is included in the [data](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/data) directory and the full raw simulation data set is available online at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX)
+The data in this project is generated using three different methods: Exact Diagonalization, Mean-Field and DMRG. Processed data is included in the [data](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/data) directory.
+
 
 1. The spectral data for the interacting BHZ model was generated via self-consistent real-space mean-field calculations. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/SelfConsistent_MF). Detail instructions are provided in this repo regarding compilations, executions and more.
 2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other).
