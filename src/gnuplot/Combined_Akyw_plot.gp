@@ -32,7 +32,7 @@ set xtics ('' -pi, '' -0.5*pi, '' 0.0, '' 0.5*pi, '' pi) offset 0,0
 set label 1 '\scalebox{1.25}{(a)}' at -3.1,0.53 tc rgb 'white' front
 set label 2 '\scalebox{1.5}{$s,\uparrow$}' at 2.2,0.54 tc rgb 'white' front
 
-splot "../data/Akyw_s_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:3 w pm3d ti ''
+splot "../../data/Akyw_s_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:3 w pm3d ti ''
 
 unset label 1
 unset label 2
@@ -48,7 +48,7 @@ set ytics ('' -0.2, '' -0.4, '' -0.6, '' 0.0, '' 0.2, '' 0.4, '' 0.6) offset 0.7
 set label 1 '\scalebox{1.25}{(b)}' at -3.1,0.53 tc rgb 'white' front
 set label 2 '\scalebox{1.5}{$s,\downarrow$}' at 2.2,0.54 tc rgb 'white' front
 
-splot "../data/Akyw_s_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:4 w pm3d ti ''
+splot "../../data/Akyw_s_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:4 w pm3d ti ''
 
 unset label 1
 unset label 2
@@ -68,7 +68,7 @@ set xtics ('\fontsize{9}{9} $-\pi$' -1.0*pi, '\fontsize{9}{9} $-\pi/2$' -0.5*pi,
 set label 1 '\scalebox{1.25}{(c)}' at -3.1,0.53 tc rgb 'white' front
 set label 2 '\scalebox{1.5}{$p,\uparrow$}' at 2.2,0.54 tc rgb 'white' front
 
-splot "../data/Akyw_p_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:3 w pm3d ti ''
+splot "../../data/Akyw_p_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:3 w pm3d ti ''
 
 unset label 1
 unset label 2
@@ -84,7 +84,7 @@ set ytics ('' -0.2, '' -0.4, '' -0.6, '' 0.0, '' 0.2, '' 0.4, '' 0.6) offset 0.7
 set label 1 '\scalebox{1.25}{(d)}' at -3.1,0.53 tc rgb 'white' front
 set label 2 '\scalebox{1.5}{$p,\downarrow$}' at 2.2,0.54 tc rgb 'white' front
 
-splot "../data/Akyw_p_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:4 w pm3d ti ''
+splot "../../data/Akyw_p_for_Vo9.5_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:4 w pm3d ti ''
 
 unset label 1
 unset label 2

@@ -1,7 +1,7 @@
 gnuplot Combined_Akyw_plot.gp
 pdflatex OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.tex
 pdftoppm -r 700 -png OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.pdf OS_resolved_Akyw_for_Vo_9p5_36x36_SSW
-mv OS_resolved_Akyw_for_Vo_9p5_36x36_SSW-1.png OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.png
+mv OS_resolved_Akyw_for_Vo_9p5_36x36_SSW-1.png ../../figures/OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.png
 
 gnuplot Plot_N_vs_V0.gp
 pdflatex Tot_N_vs_V0_for_12x3_GCE.tex
@@ -38,10 +38,18 @@ pdflatex FS_exchange_vs_1byLx_Nx3_DMRG.tex
 pdftoppm -r 700 -png FS_exchange_vs_1byLx_Nx3_DMRG.pdf FS_exchange_vs_1byLx_Nx3_DMRG
 mv FS_exchange_vs_1byLx_Nx3_DMRG-1.png FS_exchange_vs_1byLx_Nx3_DMRG.png
 
-rm -f *.tex *.eps *.aux *.log *.pdf
+rm -f *.tex *.eps *.aux *.log *-eps-converted-to.pdf
+rm Akyw_for_diff_eps_Vo_10p0_36x36_SSW.pdf
+rm OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.pdf
 
-cd lattice_plot
+mv *.pdf ../../figures/
+mv *.png ../../figures/
+
+cd ../lattice_plot
 pdflatex Confining_Lattice_new.tex
 pdftoppm -r 700 -png Confining_Lattice_new.pdf Confining_Lattice_new
 mv Confining_Lattice_new-1.png Confining_Lattice_new.png
-rm *.log *.aux *.pdf
+
+rm *.log *.aux 
+mv *.pdf ../../figures/
+mv *.png ../../figures/

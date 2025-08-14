@@ -34,7 +34,7 @@ set ytics ('\fontsize{7}{7} $-0.2$' -0.2, '\fontsize{7}{7} $-0.4$' -0.4, '\fonts
 set label 1 '\scalebox{1.1}{(a)}' at -3.1,0.53 tc rgb 'white' front
 #set label 2 '\scalebox{1.1}{$\varepsilon_h=0.0$}' at 1.1,0.53 tc rgb 'white' front
 
-splot "../data/Akyw_for_Vo10.0_A0.3_B0.5_D0.0_HE0.0.txt" u 1:2:($5*10) w pm3d ti ''
+splot "../../data/Akyw_for_Vo10.0_A0.3_B0.5_D0.0_HE0.0.txt" u 1:2:($5*10) w pm3d ti ''
 
 unset label 1
 unset label 2
@@ -52,7 +52,7 @@ set ytics ('' -0.2, '' -0.4, '' -0.6, '' 0.0, '' 0.2, '' 0.4, '' 0.6) offset 0.7
 set label 1 '\scalebox{1.1}{(b)}' at -3.1,0.53 tc rgb 'white' front
 #set label 2 '\scalebox{1.1}{$\varepsilon_h=0.3$}' at 1.1,0.53 tc rgb 'white' front
 
-splot "../data/Akyw_for_Vo10.0_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:5 w pm3d ti ''
+splot "../../data/Akyw_for_Vo10.0_A0.3_B0.5_D0.0_HE0.3.txt" u 1:2:5 w pm3d ti ''
 
 unset label 1
 unset label 2

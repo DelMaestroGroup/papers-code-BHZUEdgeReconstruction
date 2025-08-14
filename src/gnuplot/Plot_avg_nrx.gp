@@ -27,7 +27,7 @@ set tmargin at screen 0.975
 set key width -3 samplen 0.1 spacing 0.7 at 11.5,1.95
 set label 1 '\scalebox{1.0}{(a)} \scalebox{0.9}{$v_0=1.53$}' at -0.2,1.85
 
-plot "../data/raw_n_rx_L12_W03_V4.60_Nup27_Ndn27.txt" u (($1)-1.0):(($2)/3.0) w lp ps 0.9 pt 7 lw 4.5 lt 1 lc rgb '#cb4335' ti '\fontsize{7}{7} $s$', "" u (($1)-1.0):(($3)/3.0) w lp ps 0.9 pt 5 lw 4.5 lt 1 lc rgb '#2e86c1' ti '\fontsize{7}{7} $p$'
+plot "../../data/raw_n_rx_L12_W03_V4.60_Nup27_Ndn27.txt" u (($1)-1.0):(($2)/3.0) w lp ps 0.9 pt 7 lw 2.5 lt 1 lc rgb '#cb4335' ti '\fontsize{7}{7} $s$', "" u (($1)-1.0):(($3)/3.0) w lp ps 0.9 pt 5 lw 2.5 lt 1 lc rgb '#2e86c1' ti '\fontsize{7}{7} $p$'
 
 unset ylabel
 unset label 1
@@ -41,7 +41,7 @@ set tmargin at screen 0.975
 set ytics ('' 0.0, '' 0.4, '' 0.8, '' 1.2, '' 1.6, '' 2.0) offset 0.6,0
 set label 1 '\scalebox{1.0}{(b)} \scalebox{0.9}{$v_0=1.40$}' at -0.2,1.85
 
-plot "../data/raw_n_rx_L12_W03_V4.20_Nup28_Ndn27.txt" u (($1)-1.0):(($2)/3.0) w lp ps 0.9 pt 7 lw 4.5 lt 1 lc rgb '#cb4335' ti '', "" u (($1)-1.0):(($3)/3.0) w lp ps 0.9 pt 5 lw 4.5 lt 1 lc rgb '#2e86c1' ti ''
+plot "../../data/raw_n_rx_L12_W03_V4.20_Nup28_Ndn27.txt" u (($1)-1.0):(($2)/3.0) w lp ps 0.9 pt 7 lw 2.5 lt 1 lc rgb '#cb4335' ti '', "" u (($1)-1.0):(($3)/3.0) w lp ps 0.9 pt 5 lw 2.5 lt 1 lc rgb '#2e86c1' ti ''
 
 unset label 1
 
@@ -52,7 +52,7 @@ set tmargin at screen 0.975
 
 set label 1 '\scalebox{1.0}{(c)} \scalebox{0.9}{$v_0=1.33$}' at -0.2,1.85
 
-plot "../data/raw_n_rx_L12_W03_V4.00_Nup29_Ndn27.txt" u (($1)-1.0):(($2)/3.0) w lp ps 0.9 pt 7 lw 4.5 lt 1 lc rgb '#cb4335' ti '', "" u (($1)-1.0):(($3)/3.0) w lp ps 0.9 pt 5 lw 4.5 lt 1 lc rgb '#2e86c1' ti ''
+plot "../../data/raw_n_rx_L12_W03_V4.00_Nup29_Ndn27.txt" u (($1)-1.0):(($2)/3.0) w lp ps 0.9 pt 7 lw 2.5 lt 1 lc rgb '#cb4335' ti '', "" u (($1)-1.0):(($3)/3.0) w lp ps 0.9 pt 5 lw 2.5 lt 1 lc rgb '#2e86c1' ti ''
 
 #############################################################
 unset multiplot
