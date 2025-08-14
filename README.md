@@ -18,30 +18,46 @@ This repository includes links, code, scripts, and data to generate the figures 
 The data in this project is generated using three different methods: Exact Diagonalization, Mean-Field and DMRG. Processed data is included in the [data](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/data) directory and the full raw simulation data set is available online at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX)
 
 1. The spectral data for the interacting BHZ model was generated via self-consistent real-space mean-field calculations. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/SelfConsistent_MF). Detail instructions are provided in this repo regarding compilations, executions and more.
-2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other). (a) The in-house DMRG++ software developed by G.A. The documentation for the same is provided [here](https://github.com/g1257/dmrgpp), for compilation follow the steps below:
+2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other).
 
-#### DMRG++ Code and Compilation
+   (a) The in-house DMRG++ software developed by G.A. The documentation for the same is provided [here](https://github.com/g1257/dmrgpp), for compilation follow the steps below:
 
-```bash
-git clone https://code.ornl.gov/gonzalo_3/PsimagLite.git
-cd PsimagLite/lib
-perl configure.pl
-make
-cd ../../
-git clone https://code.ornl.gov/gonzalo_3/dmrgpp.git
-cd dmrgpp/src
-perl configure.pl
-make
-```
+      **DMRG++ Code and Compilation**
+        
+      ```bash
+      git clone https://code.ornl.gov/gonzalo_3/PsimagLite.git
+      cd PsimagLite/lib
+      perl configure.pl
+      make
+      cd ../../
+      git clone https://code.ornl.gov/gonzalo_3/dmrgpp.git
+      cd dmrgpp/src
+      perl configure.pl
+      make
+      ```
+        
+      Dependencies include the [BOOST](https://www.boost.org/), [HDF5](https://docs.hdfgroup.org/archive/support/HDF5/doc1.8/cpplus_RM/index.html) and [OpenBLAS](https://www.openblas.net/) libraries
+      
+      **Running the Code**
+      
+      This will generate `dmrg` and `observe` executables. Run the dmrg executable first to save the ground state and then use the observe executable to evaluate all the necessary observables. 
 
-Dependencies include the [BOOST](https://www.boost.org/), [HDF5](https://docs.hdfgroup.org/archive/support/HDF5/doc1.8/cpplus_RM/index.html) and [OpenBLAS](https://www.openblas.net/) libraries
 
-#### Running the Code
-This will generate `dmrg` and `observe` executables. Run the dmrg executable first to save the ground state and then use the observe executable to evaluate all the necessary observables. 
+    (b) the ITensors DMRG code available [here](https://github.com/DelMaestroGroup/BHZ_DMRG_Julia/tree/main) using the [ITensor.jl](https://docs.itensor.org/ITensors/stable/) package. To run the code, clone the repository
+      ```bash
+      git clone https://github.com/DelMaestroGroup/BHZ_DMRG_Julia.git
+      ```
+      Running the code requires Julia 1.11.1 or higher:
+      ```bash
+      julia ./BHZitensorsDMRG/run_bhz.jl ARGS KWARGS
+      ```
+      For details, see [README](https://github.com/DelMaestroGroup/BHZ_DMRG_Julia/blob/main/README.md) of the repository.
 
-(b) the iTensors DMRG code developed by M.T. 
+       
 
-3. For small system we considered the many-body exact diagonalization code. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/ManyBody_ED). Detail instructions are provided in this repo regarding compilations, executions and more.
+
+
+4. For small system we considered the many-body exact diagonalization code. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/ManyBody_ED). Detail instructions are provided in this repo regarding compilations, executions and more.
 
 ### Support
 The creation of these materials was supported in part by the Department of Energy under Award No. [DE-SC0022311]([https://www.nsf.gov/awardsearch/simpleSearchResult?queryText=delmaestro](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=31bd2b59-7a7a-424c-83cc-fad4b3df485f&rtc=24&PRoleId=10)).
