@@ -68,7 +68,7 @@ The creation of these materials was supported in part by the Department of Energ
 
 ### Figures
 #### Figure 1: Lattice Geometry and Potential Profile
-<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/lattice_plot/Confining_Lattice_new.png" width="400px">
+<img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/Confining_Lattice_new.png" width="400px">
 
 #### Figure 2: Mean-field Orbital and Spin Resolved Spectral Function
 <img src="https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/blob/main/figures/OS_resolved_Akyw_for_Vo_9p5_36x36_SSW.png" width="600px">
