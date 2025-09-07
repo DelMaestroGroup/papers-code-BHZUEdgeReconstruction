@@ -1,11 +1,11 @@
-[![Paper](https://img.shields.io/badge/paper-arXiv%3AXXXX.YYYYY-B31B1B.svg)](https://arxiv.org/abs/XXXX.YYYYY)
+[![Paper](https://img.shields.io/badge/paper-arXiv%3A2508.10726-B31B1B.svg)](https://arxiv.org/abs/2508.10726)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16875877.svg)](https://zenodo.org/badge/latestdoi/16875877)
 
 # Edge Reconstruction in a Quantum Spin Hall Insulator
 
 Rahul Soni, Matthias Thamm, Gonzalo Alvarez, Bernd Rosenow, and Adrian Del Maestro
 
-[arXiv:XXXX.YYYYY](https://arxiv.org/abs/XXXX.YYYYY)
+[arXiv:2508.10726](https://arxiv.org/abs/2508.10726)
 
 ### Abstract
 We study interaction-driven edge reconstruction in a quantum spin Hall insulator described by the BHZ model with Kanamori–Hubbard interactions using real-space density matrix renormalization group method in both the grand-canonical and canonical ensembles. 
