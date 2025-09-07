@@ -1,5 +1,6 @@
 [![Paper](https://img.shields.io/badge/paper-arXiv%3A2508.10726-B31B1B.svg)](https://arxiv.org/abs/2508.10726)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16875877.svg)](https://zenodo.org/badge/latestdoi/16875877)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16875878.svg)](https://zenodo.org/badge/latestdoi/16875878)
+
 
 # Edge Reconstruction in a Quantum Spin Hall Insulator
 
