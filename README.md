@@ -18,7 +18,7 @@ This repository includes links, code, scripts, and data to generate the figures 
 The data in this project is generated using three different methods: Exact Diagonalization, Mean-Field and DMRG. Processed data is included in the [data](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/data) directory.
 
 
-1. The spectral data for the interacting BHZ model was generated via self-consistent real-space mean-field calculations. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/SelfConsistent_MF). Detail instructions are provided in this repo regarding compilations, executions and more.
+1. The spectral data for the interacting BHZ model was generated via self-consistent real-space mean-field calculations. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/src/SelfConsistent_MF). Detail instructions are provided in this repo regarding compilations, executions and more.
 2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other). The full raw data set can be found on zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17073587.svg)](https://doi.org/10.5281/zenodo.17073587).
 
    (a) The in-house DMRG++ software developed by G.A. The documentation for the same is provided [here](https://github.com/g1257/dmrgpp), for compilation follow the steps below:
@@ -58,7 +58,7 @@ The data in this project is generated using three different methods: Exact Diago
 
 
 
-4. For small system we considered the many-body exact diagonalization code. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/ManyBody_ED). Detail instructions are provided in this repo regarding compilations, executions and more.
+4. For small system we considered the many-body exact diagonalization code. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/src/ManyBody_ED). Detail instructions are provided in this repo regarding compilations, executions and more.
 
 ### Support
 The creation of these materials was supported in part by the Department of Energy under Award No. [DE-SC0022311]([https://www.nsf.gov/awardsearch/simpleSearchResult?queryText=delmaestro](https://pamspublic.science.energy.gov/WebPAMSExternal/Interface/Common/ViewPublicAbstract.aspx?rv=31bd2b59-7a7a-424c-83cc-fad4b3df485f&rtc=24&PRoleId=10)).
