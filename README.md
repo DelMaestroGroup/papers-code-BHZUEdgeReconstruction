@@ -19,7 +19,7 @@ The data in this project is generated using three different methods: Exact Diago
 
 
 1. The spectral data for the interacting BHZ model was generated via self-consistent real-space mean-field calculations. The code can be found [here](https://github.com/DelMaestroGroup/papers-code-BHZUEdgeReconstruction/tree/main/codes/SelfConsistent_MF). Detail instructions are provided in this repo regarding compilations, executions and more.
-2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other).
+2. The real space charge, magnetic, exact ground-state data for interacting BHZ ladders was generated via DMRG for both canonical and grand-canonical ensemble. For the large DMRG calculations we considered two different codes (benchmarked against each other). The full raw data set can be found on zenodo: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17073587.svg)](https://doi.org/10.5281/zenodo.17073587).
 
    (a) The in-house DMRG++ software developed by G.A. The documentation for the same is provided [here](https://github.com/g1257/dmrgpp), for compilation follow the steps below:
 
